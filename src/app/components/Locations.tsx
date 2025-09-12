@@ -6,7 +6,7 @@ export default function Locations() {
   return (
     <section id="location" className="px-6 py-12 max-w-7xl mx-auto bg-white">
       <header className="mb-8 text-center">
-        <h2 className="text-3xl font-bold">Locația noastrǎ:</h2>
+        <h2 className="text-4xl font-bold">Locația noastrǎ:</h2>
       </header>
       <div className="w-full h-[450px] rounded-lg overflow-hidden border">
         <iframe

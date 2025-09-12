@@ -6,7 +6,7 @@ import Fleet from "./components/Fleet";
 
 export default function Home() {
   return (
-    <main className="bg-white text-black">
+    <main>
       <Hero />
       <Fleet />
       <Info />

@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import { Users, Fuel, Settings } from "lucide-react";
 
 // Tip de date pentru fiecare mașină
 type Car = {
@@ -134,9 +135,9 @@ function CarCard({ car }: { car: Car }) {
         <p className="mt-1 text-sm text-gray-600">{car.subtitle}</p>
 
         <ul className="mt-4 grid grid-cols-3 gap-3 text-sm text-gray-700">
-          <li className="flex items-center gap-2"><span>👥</span>{car.seats} persoane</li>
-          <li className="flex items-center gap-2"><span>⛽</span>{car.fuel}</li>
-          <li className="flex items-center gap-2"><span>⚙️</span>{car.transmission}</li>
+          <li className="flex items-center gap-2"><Users className="w-4 h-4" />{car.seats} persoane</li>
+          <li className="flex items-center gap-2"><Fuel className="w-4 h-4" />{car.fuel}</li>
+          <li className="flex items-center gap-2"><Settings className="w-4 h-4" />{car.transmission}</li>
         </ul>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -151,7 +152,7 @@ function CarCard({ car }: { car: Car }) {
 
 export default function Fleet() {
   return (
-    <section id="fleet" className="mx-auto max-w-7xl px-4 py-14">
+    <section id="fleet" className="mx-auto max-w-7xl px-4 py-14 scroll-mt-12">
       <header className="mb-8 text-center">
         <h2 className="text-3xl sm:text-4xl font-black text-black">Flota noastră <span className="text-[#071326]">exclusivă</span></h2>
         <p className="mt-2 text-gray-700">
@@ -164,6 +165,14 @@ export default function Fleet() {
         {CARS.map((car) => (
           <CarCard key={car.id} car={car} />
         ))}
+      </div>
+      <div className="mt-8 text-center">
+        <a
+          href="#contact"
+          className="inline-block px-6 py-3 bg-[#071326] text-white text-lg font-semibold rounded hover:bg-[#0a1a33] transition transform hover:scale-105 duration-150"
+        >
+          Rezervă acum o mașină din flota noastră
+        </a>
       </div>
     </section>
   );

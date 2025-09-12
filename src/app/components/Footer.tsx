@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -44,12 +45,19 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="bg-gray-100 border-t border-black/10">
-        <div className="mx-auto max-w-7xl px-4 py-4 flex flex-col sm:flex-row items-center justify-between text-xs">
+        <div className="mx-auto max-w-7xl px-4 py-2 flex flex-col sm:flex-row items-center justify-between text-xs">
           <div className="text-black/60">
             Copyright © {new Date().getFullYear()} NeoRent | Toate drepturile sunt rezervate.
           </div>
-          <div className="mt-2 sm:mt-0 text-black/60">
-            Dezvoltat de Eduard A.
+          <div className="mt-2 sm:mt-0 flex items-center gap-2">
+            <Link
+              href="https://www.linkedin.com/in/eduard-amza-030aab20b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black/80 font-semibold underline underline-offset-2 decoration-[#071326] hover:text-[#071326] transition-colors"
+            >
+              Dezvoltat de EAA.
+            </Link>
           </div>
         </div>
       </div>
