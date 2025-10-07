@@ -22,7 +22,6 @@ Designed for car rental businesses — fully modular, SEO-optimized, and easy to
 
 ## 🖼️ Preview
 
-Add your screenshots in `public/preview/` and update the image paths below:
 
 ### 🏠 Homepage
 ![Homepage preview](./public/preview/homepage.png)
@@ -67,7 +66,7 @@ The app will run at [http://localhost:3000](http://localhost:3000)
 ---
 
 ## 🧠 Tech Stack
-- Next.js 14 (App Router)
+- Next.js 15 (App Router)
 - TypeScript
 - Tailwind CSS
 - Lucide React (icons)
