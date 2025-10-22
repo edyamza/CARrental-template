@@ -12,7 +12,7 @@ Designed for car rental businesses — fully modular, SEO-optimized, and easy to
 ## ✨ Features
 - 🧱 Modular component structure (Hero, Fleet, Info, Contact, Locations)
 - 🧭 SEO-ready (metadata, Open Graph, canonical URLs)
-- ⚡ Built with Next.js 14 App Router
+- ⚡ Built with Next.js 15 App Router
 - 🖼️ Optimized design with Tailwind CSS
 - 📜 Prebuilt legal pages (Cookies, Privacy, Terms)
 - 🔍 Structured Data (JSON-LD) for Google indexing
